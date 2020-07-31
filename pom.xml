@@ -100,12 +100,12 @@
         </plugin>
         <plugin>
           <artifactId>maven-surefire-plugin</artifactId>
-          <version>2.22.2</version>
+          <version>3.0.0-M5</version>
           <configuration>
             <suiteXmlFiles>
               <suiteXmlFile>testNG.xml</suiteXmlFile>
-              <testFailureIgnore>true</testFailureIgnore>
             </suiteXmlFiles>
+            <testFailureIgnore>true</testFailureIgnore>
           </configuration>
         </plugin>
         <plugin>
