@@ -105,8 +105,6 @@
             <suiteXmlFiles>
               <suiteXmlFile>testNG.xml</suiteXmlFile>
             </suiteXmlFiles>
-              <testFailureIgnore>true</testFailureIgnore>
-              <useSystemClassLoader>false</useSystemClassLoader>
           </configuration>
         </plugin>
         <plugin>
