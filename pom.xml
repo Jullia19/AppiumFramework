@@ -23,7 +23,6 @@
       <groupId>org.testng</groupId>
       <artifactId>testng</artifactId>
       <version>7.1.0</version>
-      <scope>test</scope>
     </dependency>
     <dependency>
       <groupId>io.appium</groupId>
@@ -105,7 +104,8 @@
             <suiteXmlFiles>
               <suiteXmlFile>testNG.xml</suiteXmlFile>
             </suiteXmlFiles>
-            <testFailureIgnore>true</testFailureIgnore>
+              <testFailureIgnore>true</testFailureIgnore>
+              <useSystemClassLoader>false</useSystemClassLoader>
           </configuration>
         </plugin>
         <plugin>
