@@ -90,8 +90,7 @@
           <version>3.8.0</version>
         </plugin>
         <plugin>
-          <groupId>org.apache.maven.plugins</groupId>
-          <artifactId>maven-surefire-plugin</artifactId>
+          <artifactId>maven-failsafe-plugin</artifactId>
           <executions>
             <execution>
               <!-- changed <id> to <phase>, but I don't know whether it's important or not. -->
