@@ -4,6 +4,7 @@ import io.appium.java_client.android.AndroidDriver;
 import io.appium.java_client.android.AndroidElement;
 import io.appium.java_client.remote.MobileCapabilityType;
 import io.appium.java_client.service.local.AppiumDriverLocalService;
+import io.appium.java_client.service.local.AppiumServiceBuilder;
 import org.apache.commons.io.FileUtils;
 import org.aspectj.util.FileUtil;
 import org.openqa.selenium.OutputType;
@@ -30,7 +31,12 @@ public class base {
 		boolean flag =	checkIfServerIsRunnning(4723);
 		if(!flag)
 		{
-			service=AppiumDriverLocalService.buildDefaultService();
+			service= AppiumDriverLocalService
+					.buildService(new AppiumServiceBuilder()
+							.withAppiumJS(
+									new File(
+											"C:/Users/jullia/AppData/Roaming/npm/node_modules/appium/lib/main.js"))
+					.withIPAddress("127.0.0.1").usingPort(4723));
 			service.start();
 		}
 		return service;
