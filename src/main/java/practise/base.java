@@ -33,7 +33,7 @@ public class base {
 		{
 			service= AppiumDriverLocalService
 					.buildService(new AppiumServiceBuilder()
-							.usingDriverExecutable(new File("C:/Users/jullia/AppData/Roaming/npm/node_modules/appium/node_modules"))
+							.usingDriverExecutable(new File("C:/Program Files/nodejs"))
 							.withAppiumJS(
 									new File(
 											"C:/Users/jullia/AppData/Roaming/npm/node_modules/appium/lib/main.js"))
