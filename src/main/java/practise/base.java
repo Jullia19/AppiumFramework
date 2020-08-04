@@ -31,13 +31,6 @@ public class base {
 		boolean flag =	checkIfServerIsRunnning(4723);
 		if(!flag)
 		{
-			/*service= AppiumDriverLocalService
-					.buildService(new AppiumServiceBuilder()
-							.usingDriverExecutable(new File("C:/Program Files/nodejs"))
-							.withAppiumJS(
-									new File(
-											"C:/Users/jullia/AppData/Roaming/npm/node_modules/appium/lib/main.js"))
-					.withIPAddress("127.0.0.1").usingPort(4723));*/
 			service=AppiumDriverLocalService.buildDefaultService();
 			service.start();
 		}
@@ -88,6 +81,9 @@ public class base {
 		if(device.contains("emulator"))
 		{
 			startEmulator();
+		}else{
+			startEmulator();
+			System.out.println("else");
 		}
 
 		capabilities.setCapability(MobileCapabilityType.DEVICE_NAME, device);
