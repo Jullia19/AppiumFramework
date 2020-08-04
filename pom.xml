@@ -96,14 +96,9 @@
           <version>3.8.0</version>
         </plugin>
         <plugin>
-          <artifactId>maven-failsafe-plugin</artifactId>
-          <executions>
-            <execution>
-              <!-- changed <id> to <phase>, but I don't know whether it's important or not. -->
-              <phase>integration-test</phase>
-              <!-- ... no changes here: the same as in the question ... -->
-            </execution>
-          </executions>
+          <groupId>org.apache.maven.plugins</groupId>
+          <artifactId>maven-surefire-plugin</artifactId>
+          <version>3.0.0-M3</version>
           <configuration>
             <suiteXmlFiles>
               <suiteXmlFile>testng.xml</suiteXmlFile>

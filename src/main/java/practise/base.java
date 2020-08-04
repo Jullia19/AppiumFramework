@@ -76,14 +76,10 @@ public class base {
 		File app = new File(appDir, (String) properties.get(appName));
 		DesiredCapabilities capabilities = new DesiredCapabilities();
 
-		//String device = (String) properties.get("Device");
 		String device= System.getProperty("deviceName");
 		if(device.contains("emulator"))
 		{
 			startEmulator();
-		}else{
-			startEmulator();
-			System.out.println("else");
 		}
 
 		capabilities.setCapability(MobileCapabilityType.DEVICE_NAME, device);
