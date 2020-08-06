@@ -102,7 +102,7 @@ public class base {
 
 	}
 
-	@BeforeTest
+	//@BeforeTest
 	public void killAllProcess() throws InterruptedException, IOException {
 
 		Runtime.getRuntime().exec("taskkill /F /IM node.exe");
