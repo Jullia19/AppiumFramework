@@ -103,6 +103,8 @@
             <suiteXmlFiles>
               <suiteXmlFile>testng.xml</suiteXmlFile>
             </suiteXmlFiles>
+            <testFailureIgnore>true</testFailureIgnore>
+            <shutdown>kill</shutdown> <!-- Use it if required-->
           </configuration>
         </plugin>
         <plugin>
